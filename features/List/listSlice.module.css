@@ -1,0 +1,106 @@
+.search{
+  padding: 7px 5px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 25px;
+  /* border: none; */
+  outline: none;
+}
+.addbox{
+  padding: 7px 5px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 25px;
+  outline: none;
+}
+.addbtn{
+    padding: 8px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+.yourDivId {
+    position: relative;
+    margin: auto;
+    transition: margin-top 0.3s ease;
+  }
+  .sousgrid{
+    background-color: white;
+    width: 60%;
+    left: 15%;
+    margin: 10px;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .key{
+    text-align: left;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .box{
+    padding: 2px;
+    color: #747373;
+    font-size: 13px;
+    font-family: cursive;
+  }
+  .deleteIcon{
+    color:#ff0000c4;
+    padding: 4px;
+  }
+  .ajoutIcon{
+    color:blue;
+    padding: 4px;
+  }
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .emptypop{
+    /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  }
+  .emptypop p{
+    position: absolute;
+    top: 16%;
+    color: white;
+  }
+  .popcontainer{
+    position: absolute;
+    top: 30%;
+    margin-left: 15%;
+    /* transform: translateX(%); */
+    padding: 40px;
+    background-color: black;
+    width: 50%;
+  }
+  .closebtn{
+    position: absolute;
+    color:red;
+    border:2px solid white;
+    padding:4px;
+    left: 45%;
+    bottom: 7%;
+    border-radius: 50%;
+  }
